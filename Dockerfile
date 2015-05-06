@@ -16,4 +16,4 @@ COPY . /var/www/
 COPY docker/nginx/default.conf /etc/nginx/sites-available/000-default.conf
 
 # Start apache.
-CMD ["/etc/init.d/nginx", "restart"]
+CMD service nginx restart
