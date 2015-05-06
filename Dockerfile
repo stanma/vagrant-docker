@@ -13,7 +13,7 @@ RUN mkdir -p /var/www
 WORKDIR /var/www
 COPY . /var/www/
 
-COPY docker/nginx/default.conf /etc/nginx/sites-available/000-default.conf
+COPY docker/nginx/default.conf /etc/nginx/sites-enabled/000-default.conf
 
 # Start nginx.
 CMD ["nginx", "-g", "daemon off;"]
