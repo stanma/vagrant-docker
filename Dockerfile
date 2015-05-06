@@ -19,4 +19,4 @@ COPY docker/nginx/default.conf /etc/nginx/sites-enabled/000-default.conf
 CMD ["nginx", "-g", "daemon off;"]
 
 # php-fpm
-ENTRYPOINT /usr/sbin/php-fpm --nodaemonize
+ENTRYPOINT /usr/sbin/php5-fpm --nodaemonize
